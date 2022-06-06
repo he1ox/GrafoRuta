@@ -5,6 +5,8 @@
  */
 package GrafosPkg;
 
+import GrafosPkg.Departamentos.Departamento;
+
 import java.util.LinkedList;
 import java.util.List;
 import java.util.PriorityQueue;
@@ -65,8 +67,11 @@ public class Grafo {
         }
         String ruta = "";
         // recorre la pila para armar la ruta en el orden correcto
-        while(!pila.isEmpty()) ruta+=(pila.pop().id + " ");
-        return distancia + ": " + ruta;
+        while(!pila.isEmpty())
+            //Convierte el id al departamento y da un espacio entre cada nodo
+            ruta += Departamento.getDepartamento(pila.pop().id) + "->";
+
+        return distancia + " Kilometros recorridos: " + ruta;
     }
 
     // encuentra la ruta más corta desde el nodo inicial a todos los demás

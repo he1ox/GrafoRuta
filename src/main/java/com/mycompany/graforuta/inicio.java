@@ -126,8 +126,8 @@ public class inicio {
         g.agregarRuta(Departamento.SAN_MARCOS, Departamento.HUEHUETENANGO, 105);
 
 
-        char inicio = Departamento.CHIMALTENANGO;
-        char fin = Departamento.PETEN;
+        char inicio = Departamento.PETEN;
+        char fin = Departamento.CHIMALTENANGO;
 
         String respuesta = g.encontrarRutaMinimaDijkstra(inicio, fin);
         System.out.println(respuesta);

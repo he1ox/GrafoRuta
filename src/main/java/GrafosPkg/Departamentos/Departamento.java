@@ -25,4 +25,59 @@ public class Departamento {
     public static final char JUTIAPA = 'v';
 
     public static String DEPARTAMENTOS = "abcdefghijklmnopqrstuv";
+
+    //Make a function that returns the city name of the given char
+    public static String getDepartamento(char id){
+        switch (id){
+            case PETEN:
+                return "Peten";
+            case HUEHUETENANGO:
+                return "Huehuetenango";
+            case QUICHE:
+                return "Quiché";
+            case ALTA_VERAPAZ:
+                return "Alta Verapaz";
+            case IZABAL:
+                return "Izabal";
+            case BAJA_VERAPAZ:
+                return "Baja Verapaz";
+            case EL_PROGRESO:
+                return "El Progreso";
+            case ZACAPA:
+                return "Zacapa";
+            case SAN_MARCOS:
+                return "San Marcos";
+            case QUETZALTENANGO:
+                return "Quetzaltenango";
+            case TOTONICAPAN:
+                return "Totonicapán";
+            case SOLOLA:
+                return "Solola";
+            case CHIMALTENANGO:
+                return "Chimaltenango";
+            case SACATEPEQUEZ:
+                return "Sacatepequez";
+            case GUATEMALA:
+                return "Guatemala";
+            case JALAPA:
+                return "Jalapa";
+            case CHIQUIMULA:
+                return "Chiquimula";
+            case RETALHUEU:
+                return "Retalhuleu";
+            case SUCHITEPEQUEZ:
+                return "Suchitepequez";
+            case ESCUINTLA:
+                return "Escuintla";
+            case SANTA_ROSA:
+                return "Santa Rosa";
+            case JUTIAPA:
+                return "Jutiapa";
+            default:
+                return "";
+        }
+    }
+
+
+
 }
