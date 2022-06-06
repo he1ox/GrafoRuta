@@ -5,7 +5,10 @@
  */
 package com.mycompany.graforuta;
 
+import GrafosPkg.Departamentos.Departamento;
 import GrafosPkg.Grafo;
+
+import java.util.Arrays;
 
 /**
  *
@@ -14,7 +17,12 @@ import GrafosPkg.Grafo;
 public class inicio {
     
     public static void main(String[] args) {
-          Grafo g = new Grafo("iabcdeft");
+
+          Grafo g = new Grafo(Departamento.DEPARTAMENTOS);
+
+          //Grafo g = new Grafo("iabcdeft");
+
+
 /*        g.agregarRuta('a','b', 3);
         g.agregarRuta('a','e', 6);
         g.agregarRuta('a','f',10);
@@ -26,6 +34,9 @@ public class inicio {
         g.agregarRuta('d','f', 4);
         g.agregarRuta('e','f', 4);*/
 
+
+/*
+        Ejemplo ruta
         g.agregarRuta('i','a',9);
         g.agregarRuta('i','c',2);
 
@@ -44,9 +55,16 @@ public class inicio {
         g.agregarRuta('e','t',9);
 
         g.agregarRuta('f','t',2);
-
         char inicio = 'i';
         char fin    = 't';
+        */
+
+        g.agregarRuta(Departamento.PETEN,Departamento.ALTA_VERAPAZ,147);
+
+
+
+        char inicio = Departamento.PETEN;
+        char fin = Departamento.ALTA_VERAPAZ;
 
         String respuesta = g.encontrarRutaMinimaDijkstra(inicio, fin);
         System.out.println(respuesta);
