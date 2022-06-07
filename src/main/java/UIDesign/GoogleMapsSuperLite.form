@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="UIDesign.GoogleMapsSuperLite">
+  <grid id="27dc6" binding="panelPrincipal" layout-manager="GridLayoutManager" row-count="7" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <vspacer id="36558">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="dcfc" class="javax.swing.JLabel" binding="tituloApp">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Calculadora de Distancias" noi18n="true"/>
+        </properties>
+      </component>
+      <component id="6746b" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Punto de Partida" noi18n="true"/>
+        </properties>
+      </component>
+      <component id="11f0" class="javax.swing.JComboBox" binding="puntoDePartida">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="PETEN"/>
+            <item value="HUEHUETENANGO"/>
+            <item value="QUICHE"/>
+            <item value="ALTA_VERAPAZ"/>
+            <item value="IZABAL"/>
+            <item value="BAJA_VERAPAZ"/>
+            <item value="EL_PROGRESO"/>
+            <item value="ZACAPA"/>
+            <item value="SAN_MARCOS"/>
+            <item value="QUETZALTENANGO"/>
+            <item value="TOTONICAPAN"/>
+            <item value="SOLOLA"/>
+            <item value="CHIMALTENANGO"/>
+            <item value="SACATEPEQUEZ"/>
+            <item value="GUATEMALA"/>
+            <item value="JALAPA"/>
+            <item value="CHIQUIMULA"/>
+            <item value="RETALHUEU"/>
+            <item value="SUCHITEPEQUEZ"/>
+            <item value="ESCUINTLA"/>
+            <item value="SANTA_ROSA"/>
+            <item value="JUTIAPA"/>
+          </model>
+        </properties>
+      </component>
+      <vspacer id="6c50d">
+        <constraints>
+          <grid row="0" column="2" row-span="7" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="4c76a" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Punto de Llegada" noi18n="true"/>
+        </properties>
+      </component>
+      <component id="86dbe" class="javax.swing.JComboBox" binding="puntoDeLlegada">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="PETEN"/>
+            <item value="HUEHUETENANGO"/>
+            <item value="QUICHE"/>
+            <item value="ALTA_VERAPAZ"/>
+            <item value="IZABAL"/>
+            <item value="BAJA_VERAPAZ"/>
+            <item value="EL_PROGRESO"/>
+            <item value="ZACAPA"/>
+            <item value="SAN_MARCOS"/>
+            <item value="QUETZALTENANGO"/>
+            <item value="TOTONICAPAN"/>
+            <item value="SOLOLA"/>
+            <item value="CHIMALTENANGO"/>
+            <item value="SACATEPEQUEZ"/>
+            <item value="GUATEMALA"/>
+            <item value="JALAPA"/>
+            <item value="CHIQUIMULA"/>
+            <item value="RETALHUEU"/>
+            <item value="SUCHITEPEQUEZ"/>
+            <item value="ESCUINTLA"/>
+            <item value="SANTA_ROSA"/>
+            <item value="JUTIAPA"/>
+          </model>
+        </properties>
+      </component>
+      <component id="14616" class="javax.swing.JButton" binding="btnCalcularDistancia">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Obtener Ruta "/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

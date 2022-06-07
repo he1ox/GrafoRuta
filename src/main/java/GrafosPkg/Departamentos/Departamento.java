@@ -24,6 +24,30 @@ public class Departamento {
     public static final char SANTA_ROSA = 'u';
     public static final char JUTIAPA = 'v';
 
+    public static String[] listaDepartamentos = {
+            "PETEN",
+            "HUEHUETENANGO",
+            "QUICHE",
+            "ALTA_VERAPAZ",
+            "IZABAL",
+            "BAJA_VERAPAZ",
+            "EL_PROGRESO",
+            "ZACAPA",
+            "SAN_MARCOS",
+            "QUETZALTENANGO",
+            "TOTONICAPAN",
+            "SOLOLA",
+            "CHIMALTENANGO",
+            "SACATEPEQUEZ",
+            "GUATEMALA",
+            "JALAPA",
+            "CHIQUIMULA",
+            "RETALHUEU",
+            "SUCHITEPEQUEZ",
+            "ESCUINTLA",
+            "SANTA_ROSA",
+            "JUTIAPA"
+    };
     public static String DEPARTAMENTOS = "abcdefghijklmnopqrstuv";
 
     //Make a function that returns the city name of the given char
@@ -78,6 +102,55 @@ public class Departamento {
         }
     }
 
-
-
+    //Make a function that returns the char of the given city name
+    public static char getChar(String departamento){
+        switch (departamento){
+            case "PETEN":
+                return 'a';
+            case "HUEHUETENANGO":
+                return 'b';
+            case "QUICHE":
+                return 'c';
+            case "ALTA_VERAPAZ":
+                return 'd';
+            case "IZABAL":
+                return 'e';
+            case "BAJA_VERAPAZ":
+                return 'f';
+            case "EL_PROGRESO":
+                return 'g';
+            case "ZACAPA":
+                return 'h';
+            case "SAN_MARCOS":
+                return 'i';
+            case "QUETZALTENANGO":
+                return 'j';
+            case "TOTONICAPAN":
+                return 'k';
+            case "SOLOLA":
+                return 'l';
+            case "CHIMALTENANGO":
+                return 'm';
+            case "SACATEPEQUEZ":
+                return 'n';
+            case "GUATEMALA":
+                return 'o';
+            case "JALAPA":
+                return 'p';
+            case "CHIQUIMULA":
+                return 'q';
+            case "RETALHUEU":
+                return 'r';
+            case "SUCHITEPEQUEZ":
+                return 's';
+            case "ESCUINTLA":
+                return 't';
+            case "SANTA_ROSA":
+                return 'u';
+            case "JUTIAPA":
+                return 'v';
+            default:
+                return ' ';
+        }
+    }
 }
